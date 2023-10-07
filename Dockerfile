@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm cache clean -f
 RUN npm i 
-RUN npm install react-dom@5.3.3
+RUN npm i react-router-dom@5.3.3
 RUN npm i node-sass
 RUN i framer-motion
 RUN npm i react-dotenv
