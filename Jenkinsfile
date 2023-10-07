@@ -25,19 +25,19 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh 'sudo docker push kartikeya532001/Demo:1.0'
+                sh 'sudo docker push kartikeya532001/demo:1.0'
             }
         }
 
         stage('Pull') {
             steps {
-                sh 'sudo docker pull kartikeya532001/Demo:1.0'
+                sh 'sudo docker pull kartikeya532001/demo:1.0'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'sudo docker-compose up -d --force-recreate --no-deps --build Demo'
+                sh 'sudo docker-compose up -d --force-recreate --no-deps --build demo'
             }
         }
     }
