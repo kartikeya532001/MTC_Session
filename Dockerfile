@@ -5,12 +5,13 @@ WORKDIR aap
 COPY . .
 
 RUN npm cache clean -f
-RUN npm i 
+RUN npm i
 RUN npm i react-router-dom@5.3.3
+RUN npm install react-icons --save
 RUN npm i node-sass
-RUN i framer-motion
+RUN npm i framer-motion
 RUN npm i react-dotenv
-RUN rebuild node-sass
+RUN npm rebuild node-sass
 
 EXPOSE 3000
 
