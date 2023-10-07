@@ -13,6 +13,7 @@ pipeline {
         stage ('Build') {
             steps{
                 sh 'sudo docker build -t ui .'
+                sh 'sudo docker tag ui:latest kartikeya532001/ui:latest'
             }
         }
 
