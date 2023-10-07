@@ -1,8 +1,8 @@
 pipeline {
     agent any 
 
-    stages ('Down') {
-        stage {
+    stages  {
+        stage  ('Down'){
             steps{
                 sh 'sudo docker-compose down'
             }
