@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'sudo docker build -t kartikeya532001/Demo:1.0 .'
+                sh 'sudo docker build -t kartikeya532001/demo:1.0 .'
             }
         }
 
