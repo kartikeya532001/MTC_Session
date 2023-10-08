@@ -1,7 +1,0 @@
-version: "3.3"
-services: 
-     frontend: 
-      image: ui
-      container_name: UI
-      ports:
-       - "3000:3000" 
